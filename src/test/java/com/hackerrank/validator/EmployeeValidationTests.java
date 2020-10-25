@@ -3,7 +3,7 @@ package com.hackerrank.validator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hackerrank.validator.model.Employee;
 import com.hackerrank.validator.repository.EmployeeRepository;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 @AutoConfigureMockMvc
-class EmployeeValidationTests {
+public class EmployeeValidationTests {
     @Autowired
     EmployeeRepository employeeRepository;
     ObjectMapper mapper = new ObjectMapper();
